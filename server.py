@@ -370,7 +370,7 @@ if __name__ == "__main__":
     logger.info("Starting Financial Datasets MCP Server...")
 
     # Initialize and run the server
-    mcp.run(transport="stdio")
+    mcp.run(transport="sse")
 
     # This line won't be reached during normal operation
     logger.info("Server stopped")
